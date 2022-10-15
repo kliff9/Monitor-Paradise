@@ -1,0 +1,47 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Ecommerce website for Monitors",
+  "main": "server.js",
+  "scripts": {
+    "buildq": "cd frontend && npm run build",
+    "install-frontend": "cd frontend && npm install",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodestart": "npm start",
+    "frontend": "cd frontend && npm start",
+    "START": "concurrently \"npm run start\" \"npm run frontend\"",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.0",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.17",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "path": "^0.12.7",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-fontawesome": "^1.7.1",
+    "react-video-js-player": "^1.1.1",
+    "redux": "^4.1.2",
+    "serve-static": "^1.14.1",
+    "video-react": "^0.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.1.3"
+  }
+}
