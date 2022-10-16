@@ -367,7 +367,7 @@ export default function HomeScreen() {
                 <h2 class="heading-secondary">Contact Us</h2>
                 <p class="cta-text"></p>
 
-                <form class="cta-form" name="sign-up" netlify>
+                <form class="cta-form" name="sign-up">
                   <div>
                     <label for="full-name">Full Name</label>
                     <input

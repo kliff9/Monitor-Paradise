@@ -23,17 +23,6 @@ const data = {
   ],
   products: [
     {
-      name: 'LG 38WN95C-W 38"',
-      category: "38 inches",
-      image: "/img/LG38.png",
-      price: 1599,
-      brand: "LG",
-      rating: 4.5,
-      numReviews: 377,
-      description: '38" Curved UltraWide QHD+ (3840 x 1600) Nano IPS Display',
-      countInStock: 21,
-    },
-    {
       name: 'SAMSUNG LC27F398FWNXZA 27"',
       category: "27 inches",
       image: "/img/SSLC.png",
@@ -55,7 +44,7 @@ const data = {
       numReviews: 110,
       description: `Experience true color reproduction and wide color gamut coverage with the U2720Q UltraSharp 27" 16:9 HDR 4K IPS Monitor from Dell,
       which features a native resolution of 3840 x 2160 with a 60 Hz refresh rate, as well as coverage for 99% of the sRGB and Rec. 709 color gamuts and 95% of the DCI-P3 color gamut.`,
-      countInStock: 10,
+      countInStock: 11,
     },
     {
       name: `AOC C27G2Z 27"`,
@@ -120,7 +109,7 @@ const data = {
       description: `With 99% coverage of the Adobe RGB color space, the SW271C 27" 16:9 4K HDR IPS Monitor from BenQ
                             is designed for those demanding enhanced color accuracy for tasks such as video editing, photo editing, graphic design,
                              and more. In addition to 99% coverage of the Adobe RGB color space, this monitor also covers 100% of the sRGB and Rec.709`,
-      countInStock: 20,
+      countInStock: 22,
     },
     {
       name: `Dell Alienware AW3423DW 34" `,
@@ -159,6 +148,18 @@ const data = {
       handling, so glare isn't an issue in bright rooms.It also has good contrast, with deep blacks,
         so it's a good choice for a dark room`,
       countInStock: 20,
+    },
+    {
+      name: 'LG 38WN95C-W 38"',
+      category: "38 inches",
+      image: "/img/LG38.png",
+      price: 1599,
+      brand: "LG",
+      rating: 4.5,
+      numReviews: 377,
+      description: `The curved, ultra-wide display makes easy work of your tasks.
+        Stay immersed in every moment with its curved design and enjoy its 21:9 screen ratio for a panoramic desktop experience that surrounds you.`,
+      countInStock: 21,
     },
     {
       name: `ViewSonic OMNI XG2431 24" `,

@@ -1,6 +1,3 @@
-
-
-
 /**************************/
 /* Landing SECTION */
 /**************************/
@@ -67,11 +64,9 @@
 /* FEATURED IN SECTION */
 /**************************/
 
-
 /**************************/
 /* HOW IT WORKS SECTION */
 /**************************/
-
 
 /**************************/
 /* MonitorS SECTION */
@@ -190,7 +185,7 @@
 }
 
 .testimonial-text {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.8;
   margin-bottom: 1.6rem;
 }
@@ -229,10 +224,7 @@
 .section-pricing {
   padding: 9.6rem 0;
   background-color: #f0932b;
-  
 }
-
-
 
 .plan-details {
   font-size: 1.6rem;
@@ -362,4 +354,3 @@
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
-

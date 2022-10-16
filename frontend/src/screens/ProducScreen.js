@@ -55,7 +55,7 @@ export default function ProductScreen(P) {
                 <li>Pirce : ${product.price}</li>
                 <li>
                   Description:
-                  <p>{product.description}</p>
+                  <p className="despcription">{product.description}</p>
                 </li>
               </ul>
             </div>
