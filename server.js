@@ -19,9 +19,9 @@ app.use(express.urlencoded({ extended: true }));
 //   useUnifiedTopology: true,
 // });
 
-console.log(process.env.MONGODB_URL);
 mongoose.connect(
-  "mongodb+srv://kliff01:kliff01@e-com.qk1or.mongodb.net/E-comDB?retryWrites=true&w=majority",
+  process.env.MONGODB_URL ||
+    "mongodb+srv://kliff01:kliff01@e-com.qk1or.mongodb.net/E-comDB?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -63,6 +63,7 @@ if (process.env.NODE_ENV === "production") {
     res.send("Server is ready");
   });
 }
+console.log("End of server.js");
 
 // app.get("/", (req, res) => {
 //   res.send("Server is ready");
