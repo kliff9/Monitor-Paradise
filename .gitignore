@@ -29,4 +29,4 @@ yarn-debug.log*
 yarn-error.log*
 
 .env
->>>>>>> b444e946bb9a1d20100433abd93d80aff5f40af5
+.vercel
