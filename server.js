@@ -18,15 +18,36 @@ app.use(express.urlencoded({ extended: true }));
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
 // });
+const port = process.env.PORT || 5000;
 
-mongoose.connect(
-  process.env.MONGODB_URL ||
-    "mongodb+srv://kliff01:kliff01@e-com.qk1or.mongodb.net/E-comDB?retryWrites=true&w=majority",
-  {
+const connectDB = (url) => {
+  return mongoose.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-  }
-);
+  });
+};
+
+// await mongoose.connect(
+//   process.env.MONGODB_URL ||
+//     "mongodb+srv://kliff01:kliff01@e-com.qk1or.mongodb.net/E-comDB?retryWrites=true&w=majority",
+//   {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   }
+// );
+
+const start = async () => {
+  await connectDB(
+    process.env.MONGODB_URL ||
+      "mongodb+srv://kliff01:kliff01@e-com.qk1or.mongodb.net/E-comDB?retryWrites=true&w=majority"
+  );
+  app.listen(port, () => {
+    console.log(`Server is listening on port ${port}...`);
+  });
+  console.log("connecting database ...");
+};
+
+start().catch((e) => console.log(e));
 
 app.use(cors());
 
@@ -46,11 +67,11 @@ app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });
 
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5000;
 
-app.listen(port, () => {
-  console.log(`Serve at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Serve at http://localhost:${port}`);
+// });
 const __dirname = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
@@ -63,6 +84,7 @@ if (process.env.NODE_ENV === "production") {
     res.send("Server is ready");
   });
 }
+
 console.log("End of server.js");
 
 // app.get("/", (req, res) => {
