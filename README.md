@@ -18,8 +18,10 @@ User Are able to make an account and shop through a list of products. Once they 
 
 ## Website:
 
-https://kliff-e-com.herokuapp.com/
+https://monitorparadise.vercel.app/
 
 ## Preview
 
-https://user-images.githubusercontent.com/32655437/159113107-4a4f460f-cc02-48fe-a938-cd414f5448a1.mp4
+
+https://user-images.githubusercontent.com/32655437/196689973-26843f5f-1c31-4370-9550-b618b0e0d722.mp4
+
